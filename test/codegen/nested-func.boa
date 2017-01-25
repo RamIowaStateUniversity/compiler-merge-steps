@@ -1,0 +1,10 @@
+o: output sum of int;
+
+f1 := function(i: int) : int {
+	f2 := function(j: int) : int {
+		return i + j;
+	};
+	return f2(i);
+};
+
+o << f1(3);
